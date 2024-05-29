@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Responsive Layout</title>
+  <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .menu { background-color: red; }
+    .right { background-color: blue; }
+    .content { background-color: green; }
+    .section { color: white; padding: 20px; }
+  </style>
+</head>
+<body>
+
+<div class="container">
+  <!-- Small -->
+  <h3>Small</h3>
+  <div class="d-block d-md-none">
+    <div class="row">
+      <div class="col-12 menu section">Menu</div>
+      <div class="col-12 right section">Right</div>
+      <div class="col-12 content section">Content</div>
+    </div>
+  </div>
+  
+  <!-- Medium -->
+  <h3>Medium</h3>
+  <div class="d-none d-md-block d-lg-none">
+    <div class="row">
+      <div class="col-md-4 menu section">Menu</div>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-12 right section">Right</div>
+          <div class="col-12 content section">Content</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Large -->
+  <h3>Large</h3>
+  <div class="d-none d-lg-block">
+    <div class="row">
+      <div class="col-lg-3 menu section">Menu</div>
+      <div class="col-lg-7 content section">Content</div>
+      <div class="col-lg-2 right section">Right</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>
